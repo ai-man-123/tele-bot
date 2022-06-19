@@ -37,7 +37,7 @@ const parseResult = async(json, options = {}) => {
       ignoreVal: [null,
         undefined],
       ignoreKey: [],
-      title: 'IkyyBott',
+      title: 'airishBott',
       headers: `${head}${line.repeat(4)}${arrow} » %title «`,
       body: `➜ %key : %value`,
       footer: head+line+line+line+arrow+'\n',...options,
@@ -75,7 +75,7 @@ y2mateV
 } = require('./scraper/y2mate.js')
 const yts = require('yt-search')
 
-if (config.Bot_Token == "TOKEN BOT" || config.Bot_Token == "") return console.log(new Error('ENGLISH\n\nBot token is required, get token in telegram @BotFather and create bot\n if you dont understand, please contact via WhatsApp 6282387804410\n\nINDONESIA\n\n Bot Token Diperlukan token bot, dapatkan token di telegram @BotFather dan buat bot\n jika Anda tidak mengerti, silakan hubungi melalui WhatsApp 6282387804410'))
+if (config.Bot_Token == "2137200755:AAFgdeLVGFRO9Dy3kHufF27ksBFaofoxcqU" || config.Bot_Token == "") return console.log(new Error('ENGLISH\n\nBot token is required, get token in telegram @BotFather and create bot\n if you dont understand, please contact via WhatsApp 6282387804410\n\nINDONESIA\n\n Bot Token Diperlukan token bot, dapatkan token di telegram @BotFather dan buat bot\n jika Anda tidak mengerti, silakan hubungi melalui WhatsApp 6282387804410'))
 console.log(chalk.blue('Connected to token : ')+' '+config.BotToken)
 /*console.log(chalk.cyanBright("################### TOKEN BOT KOSONG ###################\n"))
 }
@@ -194,7 +194,7 @@ resize_keyboard: true
 })
 bot.hears('Creator', ctx => {
 if(cekStatus(ctx.message.from.id, ban)) return
-bot.telegram.sendMessage(ctx.chat.id, 'Bot ini dibuat oleh @Rizky9788 / Rizky Fadilah',{
+bot.telegram.sendMessage(ctx.chat.id, 'Bot ini dibuat oleh @aiman1_23 / airish',{
 reply_markup: {
 inline_keyboard:[
 [
@@ -207,7 +207,7 @@ parse_mode: "Markdown"
 });
 bot.hears('Source', ctx => {	
 if(cekStatus(ctx.message.from.id, ban)) return
-bot.telegram.sendMessage(ctx.chat.id,'Source: https://github.com/Rizky878/bot-tele',{
+bot.telegram.sendMessage(ctx.chat.id,'Source: https://github.com/ai-man-123/tele-bot',{
 reply_markup: {
 inline_keyboard:[
 [
@@ -341,11 +341,6 @@ if(cekStatus(ctx.update.callback_query.from.id, ban)) return
 ctx.deleteMessage()
  sendText(bot,ctx,`${univ} Downloader Menu\n\n`+downloadermenu)
 })
-bot.action('nsfwmenu', ctx => {
-if(cekStatus(ctx.update.callback_query.from.id, ban)) return
-ctx.deleteMessage()
- sendText(bot,ctx,`${univ} Nsfw Menu\n\n`+nsfwmenu)
-})
 bot.action('funmenu', ctx => {
 if(cekStatus(ctx.update.callback_query.from.id, ban)) return
 ctx.deleteMessage()
@@ -371,17 +366,7 @@ if(cekStatus(ctx.update.callback_query.from.id, ban)) return
 ctx.deleteMessage()
 sendText(bot,ctx,`${univ} Admin Menu\n\n`+adminmenu)
 })
-bot.action('loli', async(ctx) => {
-if(cekStatus(ctx.update.callback_query.from.id, ban)) return
-ctx.deleteMessage()
-ctx.reply('mencari')
-paq = await toJson(`https://api.rzkyfdlh.tech/loli`)
-ctx.replyWithPhoto({
-url: paq.url,
-filename: 'kitten.jpg'
-},{caption: 'Pedo yh bg 🤨📸'})
-})
-bot.action('rizky', ctx => {
+bot.action('Aiman', ctx => {
 
 if(cekStatus(ctx.update.callback_query.from.id, ban)) return
 ctx.deleteMessage()
@@ -842,7 +827,7 @@ paq = await toJson(`https://api.rzkyfdlh.tech/loli`)
 iky.replyWithPhoto({
 url: paq.url,
 filename: 'kitten.jpg'
-},{caption: 'Pedo yh bg 🤨📸',reply_to_message_id: iky.message.message_id})
+},{caption: 'hmm',reply_to_message_id: iky.message.message_id})
 break
 case 'donasi':
 sendDonation(bot,iky)
